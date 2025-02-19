@@ -130,3 +130,6 @@ D:\DUT\Internship\project\server\obj\Debug\net9.0\refint\server.dll
 D:\DUT\Internship\project\server\obj\Debug\net9.0\server.pdb
 D:\DUT\Internship\project\server\obj\Debug\net9.0\server.genruntimeconfig.cache
 D:\DUT\Internship\project\server\obj\Debug\net9.0\ref\server.dll
+D:\DUT\Internship\project\server\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\DUT\Internship\project\server\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\DUT\Internship\project\server\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
