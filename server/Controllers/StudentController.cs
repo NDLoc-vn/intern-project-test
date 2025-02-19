@@ -33,7 +33,7 @@ public class StudentsController(IDataRepository dataRepository) : ControllerBase
             return BadRequest("Student is null.");
         }
         await _dataRepository.AddAsync(student);
-        return CreatedAtAction("GetStudent", new { student.Id }, null);
+        return CreatedAtAction("GetStudent", new { student.Id }, student);
     }
 
     [HttpPut("{id}")]
