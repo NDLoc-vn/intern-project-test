@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+DotNetEnv.Env.Load();
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
@@ -8,7 +9,7 @@ builder.Services.AddOpenApi();
 builder.Services.AddControllers();
 builder.Services.AddDbContext<ApplicationContext>(options => 
 {
-    var connectionString = builder.Configuration.GetConnectionString("StudentsConnection");
+    var connectionString = Environment.GetEnvironmentVariable("DB_MARIADB_CONNECTION_STRING");
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
 });
 builder.Services.AddScoped<IDataRepository, StudentRepository>();
